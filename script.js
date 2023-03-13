@@ -14,6 +14,7 @@ function play(){
     }
     else{
         userChoice=(prompt("Welcome "+userName+"! Please enter your choice - rock, paper or scissors"));
+        userChoice=userChoice.toLowerCase();
         if(userChoice=="rock"){
             computerChoice="paper";
             alert("Computer has chosen "+computerChoice+"! Sorry "+userName+", you lose!")
